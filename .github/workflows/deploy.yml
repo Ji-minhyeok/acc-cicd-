@@ -3,7 +3,11 @@ name: Build and Deploy Spring Boot to AWS EC2 in init
 
 on:
   push:
-    branches: [ init ]
+    branches: [main ]
+  pull_request:
+    branches: 
+      - main
+    types: [closed]
 
 jobs:
   build:
