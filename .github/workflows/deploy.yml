@@ -3,10 +3,6 @@ name: Build and Deploy Spring Boot to AWS EC2 when pull requests are opend
 on:
   push:
     branches: [main ]
-  pull_request:
-    branches: 
-      - main
-    types: [closed]
 
 jobs:
   build:
